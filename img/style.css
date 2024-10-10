@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+:root { 
+    --primary-color : #017FCC;
+    --secondary-color : #FFFFFF;
+    --header-text : 55px;
+    --semi-heading : 25px;
+    --regular-text : 16px
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.container  {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.section {
+    margin: 100px 0px;
+    margin-inline: auto;
+}
+.text-blue {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#call{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 100px 0px;
+    left: calc(50% - 1340px/2);
+}
+#call .wrapper-justify-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+    padding: 50px 50px;
+    height: 232px;
+
+}
+
+.Appointment {
+    color: #56ECF1;
+}
+
+
+
+img {
+    max-width: 100%;
+    margin-inline:auto ;
+}
+/* THIS IS BUTTON SECTION */
+.btnprimary {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 150px;
+    padding: 15px 20px;    
+}
+.btnprimary:hover { 
+    opacity: 0.5;
+}
+.btn_seconday {
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: black;
+    border-radius: 150px;
+    padding: 15px 20px;    
+    display: inline-block;
+}
+.btn_seconday:hover {
+    opacity: 0.5;
+}
+
+/* header */
+.semi-header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--regular-text);
+    padding: 10px 0px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px  ;
+}
+header .logo {
+    margin-right: auto;
+    width: 160px;
+    height: 72px;
+}
+header .btn_header {
+    margin-left: auto;
+
+}
+header nav .navLinks li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+header nav .navLinks li  a {
+    color: black;
+}
+
+
+.menutoggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menutoggle .bar {
+    width: 30px;
+    height: 5px;
+    margin: 2px;
+    background-color: var(--primary-color);
+}
+/* HERO SECTION */
+#hero{
+    background: url('img/hero.png') no-repeat center / cover;
+    height: 737px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+#hero .hero_text  {
+    width: 70%;
+}
+#hero .hero_text h1{
+    font-size: var(--header-text);
+    margin: 30px 0px;
+}
+
+#hero .hero_text p {
+    font-size: var(--regular-text);
+}
+
+/* hero-bg-blue */
+.hero-bg-blue {
+    position: relative;
+    background-color: var(--primary-color);
+    border: 2px solid white;
+    bottom: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 346px;
+    color: var(--secondary-color);
+   
+}
+.hero-bg-blue .bg-blue-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: var(--semi-heading);
+    font-weight: bold;
+}
+.bg-text {
+    align-items: center;
+    padding: 70px;
+    justify-content: center;
+    
+}
+
+
+
+/* about_us */
+.about_us{
+    background-color: var(--primary-color);
+    height: 375px;
+    padding: 40px 80px;
+    color: var(--secondary-color);
+    border-radius: 30px 0px 30px 0px;
+}
+
+.about_us .box img{
+    height: 416px;
+    z-index: 1;
+    position: relative;
+    bottom: 81px;
+    left: 50px;
+}
+.about_us h3 {
+    margin: 20px 0px;
+}
+
+/* Body_Sculpting */
+
+
+.Body_Sculpting .body-img img {
+    height: 365px;
+    width: 615px;
+}
+.Body_Sculpting .Body_Sculpting_text  {
+    background-color: var(--primary-color);
+    width: 95%;
+    height: 364px;
+    border-radius: 30px 0px 0px 0px;
+    padding: 50px;
+    color: var(--secondary-color);
+}
+
+.Body_Sculpting .Body_Sculpting_text  h1 {
+    margin: 20px 0px;
+}
+
+.Body_Sculpting .Body_Sculpting_text  p {
+    margin: 20px 0px;
+}
+
+
+
+.Weight {
+    color: var(--secondary-color);
+}
+.Weight .Weight-text {
+    background-color: var(--primary-color);
+    height: 364px;
+    padding: 50px;
+}
+.Weight .Weight-text h1, p {
+    margin: 10px;
+}
+
+.Weight-img img {
+    width: 615px;
+}
+
+
+
+
+.footer-wrapper {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-box img {
+    height: 78px;
+    width: 173px;
+}
+svg {
+    color: var(--primary-color);
+}
+
+ul li a {
+    color: #017FCC;
+}
+
+footer {
+    height: 316px;
+}
+@media(max-width : 1003px){
+    header nav .navLinks li {
+        margin: 0px 10px;
+    }
+    .btnprimary {
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        border-radius: 150px;
+        padding: 7px 10px;    
+    }
+
+    :root { 
+        --header-text : 30px;
+        --semi-heading : 20px;
+    }
+    .btn_seconday {
+        border-radius: 150px;
+        padding: 8px 10px;    
+    }
+    .bg-text .box img {
+        width: 40px;
+        height: 40px;
+         
+     }
+     .hero-bg-blue {
+     
+        height: 400px;
+       
+    }
+    .about_us{
+        background-color: var(--primary-color);
+        height: 675px;
+        padding: 40px ;
+        color: var(--secondary-color);
+    }
+    .about_us .box img{
+        height: 300px;
+        position: static;
+    
+}
+.Body_Sculpting .body-img img {
+    width: 326  px;
+    height: 100%;
+}
+}
+
+
+@media(max-width : 883px){
+    header nav .navLinks {
+        display: none;
+    }
+    .menutoggle {
+        display: flex;
+       
+    }
+
+    header nav .navLinks.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        z-index: 1;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        transition: 3s ease-in;
+    }
+    header .logo {
+        margin-right: auto;
+        width: 80px;
+        height: 42px;
+    }
+    header nav .navLinks li {
+        margin: 10px 0px;
+    }
+}
