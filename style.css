@@ -33,6 +33,7 @@ a {
 .text-blue {
     color: var(--primary-color) !important;
     font-weight: 600;
+    he
 }
 .wrapper {
     display: grid;
@@ -214,7 +215,7 @@ header nav .navLinks li  a {
 .Body_Sculpting .Body_Sculpting_text  {
     background-color: var(--primary-color);
     width: 95%;
-    height: 364px;
+    height: 664px;
     border-radius: 30px 0px 0px 0px;
     padding: 50px;
     color: var(--secondary-color);
@@ -235,7 +236,7 @@ header nav .navLinks li  a {
 }
 .Weight .Weight-text {
     background-color: var(--primary-color);
-    height: 364px;
+    height: 534px;
     padding: 50px;
 }
 .Weight .Weight-text h1, p {
@@ -313,8 +314,25 @@ footer {
     
 }
 .Body_Sculpting .body-img img {
-    width: 326  px;
+    width: 326px;
     height: 100%;
+}
+
+#call{
+    border-radius: 0px;
+    left: calc(0);
+}
+
+
+#call .wrapper-justify-content {
+   
+    padding: 0px;
+    height: 232px;
+    padding: 50px 0px;
+}
+
+.wrapper-justify-content .box h1 {
+    font-size: 18px;
 }
 }
 
